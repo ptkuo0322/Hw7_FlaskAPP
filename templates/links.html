@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset= "UTF-8">
+    <title>HW7_SI507</title>
+</head>
+<body>
+    <h1>
+        Hello, {{name}}!
+    </h1>
+    <p>
+        Today's technology headlines are...
+        <ol>
+            {%for name, url in links.items() %}
+                <li><a href={{url}}>{{name}}</a></li>
+            {% endfor %}
+        </ol>
+    </p>
+</body>
+</html>

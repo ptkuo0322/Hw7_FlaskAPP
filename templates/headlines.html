@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset= "UTF-8">
+    <title>HW7_SI507</title>
+</head>
+<body>
+    <h1>
+        Hello, {{name}}!
+    </h1>
+    <p>
+        Today's technology headlines are...
+        <ol>
+            {%for ele in headlines %}
+                <li>{{ele}}</li>
+            {% endfor %}
+        </ol>
+    </p>
+</body>
+</html>

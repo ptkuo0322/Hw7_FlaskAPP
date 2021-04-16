@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset= "UTF-8">
+    <title>HW7_SI507</title>
+    <style>
+        table, th, td {
+          border: 1px solid black; margin:0px
+        }
+        </style>
+</head>
+<body>
+    <h1>
+        Hello, {{name}}!
+    </h1>
+    <p style = "line-height:0%" >Today's technology headlines are... </p>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th colspan="2">Thumbnall</th>
+            </tr>   
+            {%for ele in range(0,images|length,3) %}
+            <tr>
+            <td><a href={{images[ele]}}>{{images[ele+1]}}</a></td>
+            <td> <img src={{images[ele+2]}} width=180 height=auto /></td>
+            {% endfor %}
+            </tr>
+        </table> 
+</body>
+</html>
